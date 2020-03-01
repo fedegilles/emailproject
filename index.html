@@ -22,6 +22,110 @@
       	max-width: 670px;
       	margin: 0 auto;
       }
+
+      .main-table-first {
+      	width: 100%;
+      	max-width: 610px;
+      	margin: 0 auto;
+      	background-color: #FFF;
+      	margin-top: 25px;
+      }
+
+      /*--- Start Two Column Sections --*/
+      .two-column {
+          text-align: center;
+          font-size: 0;
+          padding: 5px 0 10px 0;
+      }
+
+      .two-column .section {
+          width: 100%;
+          max-width: 300px;
+          display: inline-block;
+          vertical-align: top;
+      }
+
+      .two-column .content {
+          font-size: 16px;
+          line-height: 20px;
+          text-align: justify;
+      }
+
+      .content {
+          width: 100%;
+          padding-top: 20px;
+      }
+
+      .center {
+          display: table;
+          margin: 0 auto;
+      }
+
+      #callout {
+          float: right;
+          Margin: 4% 5% 2% 0;
+          height: auto;
+          overflow: hidden;
+      }
+
+      /*--- Media Queries --*/
+      @media screen and (max-width: 400px) {
+      	.h1 {
+      		font-size: 22px;
+      	}
+      	.two-column .column, .three-column .column {
+      		max-width: 100%!important;
+      	}
+      	.two-column img {
+      		width: 100%!important;
+      	}
+      	.three-column img {
+      		max-width: 60%!important;
+      	}
+      }
+
+      @media screen and (min-width: 401px) and (max-width: 400px) {
+
+      	.two-column .column {
+      		max-width: 50%!important;
+      	}
+      	.three-column .column {
+      		max-width: 33%!important;
+        }
+      }
+
+      @media screen and (max-width:768px) {
+
+
+      #callout {
+      	float:none !important;
+      	margin: 0% 0% 0% 0;
+      	height: auto;
+      	text-align:center;
+      	overflow: hidden;
+      }
+      .two-column .section {
+      	width: 100% !important;
+      	max-width: 100% !important;
+      	display: inline-block;
+      	vertical-align: top;
+      }
+
+      .two-column img {
+      	width: 100% !important;
+       	height: auto !important;
+      }
+
+      img.img-responsive {
+          width:100% !important;
+          height:auto !important;
+          max-width:100% !important;
+      }
+      .content {
+      	width: 100%;
+      	padding-top:0px !important;
+      }
+    }
     </style>
   </head>
   <body>
@@ -65,6 +169,130 @@
               </div> <!--- End Second Column of Two Columns -->
             </td>
           </tr> <!--- End Two Column Section -->
+        </table> <!--- End Main Table -->
+
+        <table class="main-table">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+                    <img src="" alt="">
+                    <h2>SHARP, BRIGHT, CRISP VISION</h2>
+                    <img src="" alt="">
+    								<p class="h2">Change is Good</p>
+    								<p class="center">With today’s busy, demanding lifestyle, how can you help ensure the contact lens you recommend will consistently meet your patients’ expectations for high performance1, and unbeaten comfort?* By switching them to ACUVUE® OASYS 1-Day with HydraLuxe® Technology.</p>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+
+          <tr> <!--- Este ya seria la seccion con el fondo gris -->
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+                    <img src="" alt="">
+    								<p class="center">ACUVUE® OASYS with HydraLuxe® Technology is another member of the ACUVUE® OASYS Brand Family that has never been beaten in comfort*</p>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr>
+        </table> <!--- End Main Table -->
+
+        <table class="outer-table-2" style="background-color: #C2C1C1;">
+    			<tr>
+    				<td class="three-column">
+    					<div class="section">
+    						<table width="100%">
+    							<tr>
+    								<td class="inner-td">
+    									<table class="content">
+    										<tr>
+    											<td class="img-text">
+    												<img src="" alt="">
+                            <p>UV</p>
+    											</td>
+    										</tr>
+    										<tr>
+    											<td class="text">
+    												<p>Highest level of UV protection</p>
+    											</td>
+    										</tr>
+                        <tr>
+    											<td class="img-text">
+    												<img src="" alt="">
+                            <p>Not replacement for sunglasess</p>
+    											</td>
+    										</tr>
+    									</table>
+    								</td>
+    							</tr>
+    						</table>
+    					</div> <!--- End First Column of Three Columns -->
+
+              <div class="section">
+    						<table width="100%">
+    							<tr>
+    								<td class="inner-td">
+    									<table class="content">
+    										<tr>
+    											<td class="img-text">
+    												<img src="" alt="">
+                            <p>COMFORT</p>
+    											</td>
+    										</tr>
+    										<tr>
+    											<td class="text">
+    												<p>Based on the ACUVUE® OASYS with HYDRACLEAR® PLUS platform</p>
+    											</td>
+    										</tr>
+    									</table>
+    								</td>
+    							</tr>
+    						</table>
+    					</div> <!--- End Second Column of Three Columns -->
+
+              <div class="section">
+    						<table width="100%">
+    							<tr>
+    								<td class="inner-td">
+    									<table class="content">
+    										<tr>
+    											<td class="img-text">
+    												<img src="" alt="">
+                            <p>FILTER LIGHT</p>
+    											</td>
+    										</tr>
+    										<tr>
+    											<td class="text">
+    												<p>Helps your eyes adjust to light better than they would on their own</p>
+    											</td>
+    										</tr>
+    									</table>
+    								</td>
+    							</tr>
+    						</table>
+    					</div> <!--- End Third Column of Three Columns -->
+    				</td>
+    			</tr> <!--- End Three Column Section -->
+        </table> <!--- End Outer Table 2 -->
+
+        <table class="main-table">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="center">ACUVUE™ RevitaLens MPDS is now available to order for sale in your practice.</p>
+    								<p class="button-holder-center"> <a class="btn" href="#">Order now</a> </p>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
         </table> <!--- End Main Table -->
       </div>
     </div>
